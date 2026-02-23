@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dt84i58nhfwin"]
+
+[ext_resource type="Texture2D" uid="uid://cvkgfy8bxcfci" path="res://Prueba Esguerra/sprites/Sprite-0001.png" id="1_ohqc0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l18bx"]
+size = Vector2(788, 25)
+
+[node name="StaticBody2D" type="StaticBody2D" unique_id=636086882]
+
+[node name="Sprite0001" type="Sprite2D" parent="." unique_id=1417068127]
+position = Vector2(2, 18)
+texture = ExtResource("1_ohqc0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=214144590]
+position = Vector2(7, 2.5)
+shape = SubResource("RectangleShape2D_l18bx")

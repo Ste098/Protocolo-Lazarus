@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dffi4g572n68k"]
+
+[ext_resource type="Script" uid="uid://b0wk12vmc074n" path="res://Prueba Esguerra/obstaculos/barril.gd" id="1_6qpf2"]
+[ext_resource type="Texture2D" uid="uid://cp45uj0cnsc1x" path="res://Prueba Esguerra/sprites/tile_0044.png" id="1_ekr8a"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6qpf2"]
+
+[node name="RigidBody2D" type="RigidBody2D" unique_id=1110059002]
+script = ExtResource("1_6qpf2")
+
+[node name="barril" type="Sprite2D" parent="." unique_id=1716485481]
+position = Vector2(0, 1.2499994)
+scale = Vector2(1.5555557, 1.75)
+texture = ExtResource("1_ekr8a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1940765665]
+shape = SubResource("CircleShape2D_6qpf2")

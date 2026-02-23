@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://bv7f2ubiqjvnx"]
+
+[ext_resource type="PackedScene" uid="uid://dtfqph1kl5vsu" path="res://Prueba Esguerra/suelos/puente.tscn" id="1_ihfcg"]
+[ext_resource type="Script" uid="uid://bfqm1f2vg2d7x" path="res://scripts/camera_2d.gd" id="1_rka8t"]
+[ext_resource type="PackedScene" uid="uid://dt84i58nhfwin" path="res://Prueba Esguerra/suelos/suelo.tscn" id="2_rka8t"]
+[ext_resource type="PackedScene" uid="uid://dffi4g572n68k" path="res://Prueba Esguerra/obstaculos/rigid_body_2d.tscn" id="3_5hph3"]
+[ext_resource type="PackedScene" uid="uid://b4kr1maqkjcxo" path="res://Prueba Esguerra/personaje/esguerra.tscn" id="4_j7kpp"]
+
+[node name="level1" type="Node2D" unique_id=1655741628]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1226302301 node_paths=PackedStringArray("object_to_follow")]
+position = Vector2(214, 605)
+position_smoothing_enabled = true
+script = ExtResource("1_rka8t")
+object_to_follow = NodePath("../Esguerra")
+
+[node name="StaticBody2D" parent="." unique_id=636086882 instance=ExtResource("1_ihfcg")]
+position = Vector2(724, 588)
+rotation = -0.116937056
+scale = Vector2(0.8436023, 1.3855433)
+
+[node name="StaticBody2D2" parent="." unique_id=841308448 instance=ExtResource("2_rka8t")]
+position = Vector2(491.99994, 308.99994)
+rotation = 0.34906584
+scale = Vector2(0.6955829, 0.6891841)
+
+[node name="StaticBody2D3" parent="." unique_id=1648662622 instance=ExtResource("2_rka8t")]
+position = Vector2(1017, 160)
+rotation = -0.116937056
+
+[node name="RigidBody2D" parent="." unique_id=1110059002 instance=ExtResource("3_5hph3")]
+position = Vector2(1139, 116)
+
+[node name="RigidBody2D2" parent="." unique_id=1078710825 instance=ExtResource("3_5hph3")]
+position = Vector2(906, 144)
+
+[node name="RigidBody2D3" parent="." unique_id=228802048 instance=ExtResource("3_5hph3")]
+position = Vector2(977, 137)
+
+[node name="Esguerra" parent="." unique_id=371991420 instance=ExtResource("4_j7kpp")]
+position = Vector2(208, 588)
+
+[node name="RigidBody2D4" parent="." unique_id=1521868945 instance=ExtResource("3_5hph3")]
+position = Vector2(161, 154)
+
+[node name="RigidBody2D5" parent="." unique_id=2069231127 instance=ExtResource("3_5hph3")]
+position = Vector2(239, 194)
+
+[node name="RigidBody2D6" parent="." unique_id=2104940976 instance=ExtResource("3_5hph3")]
+position = Vector2(340, 234)

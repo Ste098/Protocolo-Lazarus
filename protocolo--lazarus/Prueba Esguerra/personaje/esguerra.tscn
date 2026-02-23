@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://b4kr1maqkjcxo"]
+
+[ext_resource type="Script" uid="uid://bbbkcegwby5rq" path="res://Prueba Esguerra/personaje/esguerra.gd" id="1_5linj"]
+[ext_resource type="Texture2D" uid="uid://dc4lbkv05q4ms" path="res://Prueba Esguerra/personaje/esguerra.png" id="1_c0cv8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2k26b"]
+size = Vector2(31, 80)
+
+[node name="Esguerra" type="CharacterBody2D" unique_id=371991420]
+script = ExtResource("1_5linj")
+gravity = 560
+jump_speed = 280
+speed = 150
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=940262155]
+position = Vector2(-1.5, 4)
+shape = SubResource("RectangleShape2D_2k26b")
+
+[node name="Esguerra" type="Sprite2D" parent="." unique_id=615833641]
+position = Vector2(0, 4)
+texture = ExtResource("1_c0cv8")

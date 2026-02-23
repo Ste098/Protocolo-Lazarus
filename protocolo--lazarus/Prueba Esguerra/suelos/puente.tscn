@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dtfqph1kl5vsu"]
+
+[ext_resource type="Texture2D" uid="uid://c2ecuuocidqpf" path="res://Prueba Esguerra/sprites/bridge.png" id="1_ikwrt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5lej8"]
+size = Vector2(1442, 20)
+
+[node name="StaticBody2D" type="StaticBody2D" unique_id=636086882]
+
+[node name="Bridge" type="Sprite2D" parent="." unique_id=1611560170]
+position = Vector2(-1, 75)
+texture = ExtResource("1_ikwrt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=835555462]
+shape = SubResource("RectangleShape2D_5lej8")

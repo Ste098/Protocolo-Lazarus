@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bj31mbdpauf4t"]
+
+[ext_resource type="Script" uid="uid://wuj08i275wep" path="res://bala.gd" id="1_56dmq"]
+[ext_resource type="Texture2D" uid="uid://cp45uj0cnsc1x" path="res://Prueba Esguerra/sprites/tile_0044.png" id="2_64mob"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2mk5k"]
+radius = 4.722509
+
+[node name="Bala" type="Area2D" unique_id=1365306040]
+scale = Vector2(2.6399999, 3.1999998)
+script = ExtResource("1_56dmq")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=273663960]
+scale = Vector2(2.2575762, 1.8999999)
+texture = ExtResource("2_64mob")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1263447874]
+scale = Vector2(2.2575762, 1.8999999)
+shape = SubResource("CircleShape2D_2mk5k")

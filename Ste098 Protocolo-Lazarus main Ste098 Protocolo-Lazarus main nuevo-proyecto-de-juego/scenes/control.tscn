@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bnmyj4yj7uimu"]
+
+[ext_resource type="Texture2D" uid="uid://c1tp7pqe622b5" path="res://icon.svg" id="1_5p55f"]
+
+[node name="Control" type="CanvasLayer" unique_id=1258271018]
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="." unique_id=1967583375]
+position = Vector2(-547, 153)
+texture_normal = ExtResource("1_5p55f")
+action = "left"
+
+[node name="TouchScreenButton3" type="TouchScreenButton" parent="." unique_id=377640049]
+position = Vector2(-349, 156)
+texture_normal = ExtResource("1_5p55f")
+action = "right"
+
+[node name="TouchScreenButton2" type="TouchScreenButton" parent="." unique_id=653181143]
+position = Vector2(326, 135)
+texture_normal = ExtResource("1_5p55f")
+action = "interact"

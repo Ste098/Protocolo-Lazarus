@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://du74aqxn72yjf"]
+
+[ext_resource type="Script" uid="uid://bnmgtcmwl3gxt" path="res://scripts/control.gd" id="1_6gfcu"]
+
+[node name="dialogo_1" type="Control" unique_id=745993562]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_6gfcu")
+
+[node name="Panel" type="Panel" parent="." unique_id=1695100171]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="Panel" unique_id=583354812]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
